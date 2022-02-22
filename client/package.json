@@ -17,7 +17,6 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "node app.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build": "cd client && npm run build",
@@ -25,6 +24,7 @@
     "heroku-postbuild": "cd client && npm run install-client && npm run build",
     "server": "cd server && nodemon server.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
+    "start": "react-scripts start"
   },
   "proxy": "http://localhost:5000",
   "eslintConfig": {
