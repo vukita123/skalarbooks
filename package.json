@@ -25,7 +25,7 @@
   "scripts": {
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": " cd client && npm run build",
+    "build": " npm run build",
     "install-client": "npm install --prefix client",
     "heroku-postbuild": "npm run install-client && npm run build",
     "server": "cd server && nodemon server.js",
