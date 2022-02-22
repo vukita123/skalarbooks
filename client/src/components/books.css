@@ -1,0 +1,332 @@
+/* logo colors: #00BDD4 , #F79921 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+
+
+body{
+    background:white;
+    font-family: 'Roboto'
+    
+}
+
+
+
+.container{
+    margin-top: 40px;
+}
+
+
+.book_card{
+    margin-top: 60px;
+    align-items: center;
+    color: black;
+}
+
+
+.book_img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* .book_img{
+    
+} */
+
+.book_text{
+    width: 100%;
+}
+
+.book_name{
+    font-family: 'Roboto', cursive;
+    font-size:xx-large;
+    height: fit-content;
+    white-space: initial;
+}
+
+.book_author{
+    font-size: large;
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-style: italic;
+}
+
+.book_price{
+    float: right;
+    font-size: larger;
+    font-weight: lighter;
+    color: blue;
+}
+
+
+
+/* singlebook */
+
+.single_book_card{
+    display: flex;
+    align-items: center;
+}
+
+.col{padding: 20px;}
+
+/* .single_book_img{
+    width:300px
+} */
+
+.bookimg{
+    width: 330px;
+}
+
+.bookimg img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+
+.single_book_name{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: italic;
+}
+
+.single_book_author{
+    font-size: 30px;
+    text-align: center;
+}
+
+.single_book_price{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.opis{
+    padding-top: 20px;
+}
+
+.bookdesc{
+    text-align: center;
+    padding: 30px;
+    border:0px;
+    border-bottom: 2px;
+    border-style:solid;
+    border-color: black; 
+}
+
+.btn{
+    float: right;
+}
+
+
+/* CSS */
+.button-23 {
+  background-color: #00BDD4 ;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.button-23:focus-visible {
+  box-shadow: #ffffff 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+  background-color:#F79921 ;
+}
+
+.button-23:active {
+  background-color: #F79921;
+  border-color: #ffffff;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+
+/* .btn{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 20px;
+} */
+
+/* .single_container{
+    display: inline-flex;
+}
+
+.single_book_img{
+    padding: 20px;
+}
+
+.single_book_data{
+    padding: 20px;
+} */
+
+
+
+/* navbar */
+
+
+.cart{
+    float:right;
+    height: auto;
+    width: 40px;
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+  }
+  
+  li {
+      margin: 20px;
+    float: left;
+    width: 230px;
+  }
+
+  .bla{
+      padding-left: 10px;
+  }
+
+  .input_box{
+      margin-bottom: 10px;
+  }
+
+
+
+  
+  /* li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } */
+
+
+  
+  /* li a:hover:not(.active) {
+    background-color: gray;
+  }
+  
+  .active {
+    background-color: whitesmoke;
+  } */
+
+
+
+  /* cart */
+
+
+  .cart_container{
+      display: inline-flex;
+      text-decoration: none;
+      color: black;
+      width: 100%;
+      margin-top: 30px;
+  }
+
+  .cart_book_text{
+    margin-left: 10px;
+  }
+
+  .cart_img {
+      
+  }
+
+  .cart_img img{
+      height: 80px;
+  }
+
+  .cart_book_price{
+    margin-left: 10px;
+      color: blue;
+      float: right;
+  }
+
+  .check_btn{
+      
+  }
+
+
+
+/* checkout */
+
+.order_btn{
+    margin: 20px;
+    margin-bottom: 200px;
+}
+
+.books_total{
+    float: right;
+    color: blue;
+    margin: 30px;
+}
+
+
+/* footer */
+
+
+.social_link{
+    color: rgb(24, 24, 141);
+    text-decoration:underline;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.social{
+    display: inline;
+}
+
+.footer_div{
+    margin-top: 100px;
+    background-color: whitesmoke;
+}
+
+.footer_row{
+    background-color: lightgrey;
+}
+
+.footer_col{
+    background-color: lightpink;
+    text-align: center;
+    color: #00BDD4;
+}
+
+.footer_card{
+    display: inline-flex;
+}
+
+.update_test{
+    width: 20px;
+    height: 20px;
+}
+
