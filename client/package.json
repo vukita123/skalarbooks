@@ -24,7 +24,7 @@
     "heroku-postbuild": "cd client && npm run install-client && npm run build",
     "server": "cd server && nodemon server.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
-    "start": "node index.js"
+    "start": "npm start"
   },
   "proxy": "http://localhost:5000",
   "eslintConfig": {
