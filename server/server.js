@@ -24,49 +24,11 @@ app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
 
-// const transporter = nodemailer.createTransport({
-//   host: 'smtp.gmail.com',
-//   port: 587,
-//   auth: {
-//     user: 'skalarbooksorder@gmail.com',
-//     pass: 'Knjizara1!'
-//   }
-// });
+const path = require("path");
 
-
-// // verify connection configuration
-// transporter.verify(function(error, success) {
-//   if (error) {
-//     console.log(error);
-//     console.log("stopped here");
-//   } else {
-//     console.log("Server is ready to take our messages");
-//   }
-// });
-
-
-// app.post('/send', (req, res, next) => {
-//   var name = req.body.name
-//   var email = req.body.email
-//   var subject = req.body.subject
-//   var message = req.body.message
-
-//   var mail = {
-//     from: name,
-//     to: email,
-//     subject: subject,
-//     text: message
-//   }
-
-//   transporter.sendMail(mail, (err, data) => {
-//     if (err) {
-//       res.json({
-//         status: 'fail'
-//       })
-//     } else {
-//       res.json({
-//        status: 'success'
-//       })
-//     }
-//   })
-// })
+// Step 1:
+app.use(express.static(path.resolve(__dirname, "./client/build")));
+// Step 2:
+app.get("*", function (request, response) {
+  response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
+});

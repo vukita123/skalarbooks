@@ -132,8 +132,8 @@ export default class Cart extends Component {
     // When post request is sent to the create url, axios will add a new record(newperson) to the database.
     const newbook = {
       name: this.state.name,
-      // email: this.state.email+",skalarns@gmail.com",
-      email: this.state.email+",lukavrbaski96@gmail.com",
+      email: this.state.email+",skalarns@gmail.com",
+      // email: this.state.email+",lukavrbaski96@gmail.com",
       message: email_body
     };
  
