@@ -30,7 +30,7 @@
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
     "start": "react-scripts start"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "http://localhost:3000",
   "eslintConfig": {
     "extends": [
       "react-app",
