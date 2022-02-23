@@ -1,15 +1,12 @@
 const { MongoClient } = require("mongodb");
 
-// let Db = process.env.ATLAS_URI;
-const Db = "mongodb+srv://luka:mernstack@cluster0.4qd2b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-
+const Db = process.env.MONGODB_URI;
 const client = new MongoClient(Db, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
 
-console.log(Db);
 var _db;
 
 module.exports = {
