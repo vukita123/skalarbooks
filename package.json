@@ -29,7 +29,7 @@
     "node": "14.18.0"
   },
   "scripts": {
-    "build": "npm run build",
+    "build": "cd client && react-scripts build",
     "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "server": "cd server && nodemon server.js",
