@@ -1,13 +1,15 @@
 const { MongoClient } = require("mongodb");
-const mongoose = require('mongoose');
-const Db = process.env.MONGODB_URI;
+
+// let Db = process.env.ATLAS_URI;
+const Db = "mongodb+srv://luka:mernstack@cluster0.4qd2b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
 const client = new MongoClient(Db, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 
+console.log(Db);
 var _db;
 
 module.exports = {
