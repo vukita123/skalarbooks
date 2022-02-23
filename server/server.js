@@ -11,9 +11,6 @@ app.use(require("./routes/record"));
 // get driver connection
 const dbo = require("./db/conn");
 
-app.use(function (req, res, next) {
-    res.status(404).send("Sorry, can't find that!")
-})
 
 app.listen(port, () => {
   // perform a database connection when server starts
@@ -32,3 +29,7 @@ app.use(express.static(path.resolve(__dirname, "./client/build")));
 app.get("*", function (request, response) {
   response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
 });
+
+app.use(function (req, res, next) {
+  res.status(404).send("Sorry, can't find that!")
+})
