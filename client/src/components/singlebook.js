@@ -32,7 +32,7 @@ export default class Singlebook extends Component {
       //localStorage.clear()
 
       axios
-        .get("https://skalarbooks.herokuapp.com/" + this.props.match.params.id)
+        .get("https://skalarbooks.herokuapp.com/record/" + this.props.match.params.id)
         .then(async(response) => {
           this.setState({
             book_name: response.data.book_name,
