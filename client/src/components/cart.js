@@ -138,7 +138,7 @@ export default class Cart extends Component {
     };
  
     axios
-      .post("http://localhost:5000/record/send", newbook)
+      .post("https://skalarbooks.herokuapp.com/record/send", newbook)
       .then((res) => console.log(res.data));
  
     // We will empty the state after posting the data to the database
