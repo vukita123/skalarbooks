@@ -11,11 +11,12 @@ const Footer = () => {
     <div class="footer_div">
       <Row class="footer_row">
         <Col class="footer_col">
-          <a href="https://www.instagram.com/skalar_novi_sad/"/> 
+          <a href="https://www.instagram.com/skalar_novi_sad/"> 
               <div class="footer_card">
                 <img src="https://i.imgur.com/dCZ836c.png"/> 
                 <div class="social_link">Instagram</div>
               </div>
+              </a>
           
         </Col>
         <Col class="footer_col">
