@@ -46,7 +46,7 @@ export default class RecordList extends Component {
 
   // This method will delete a record based on the method
   deleteRecord(id) {
-    axios.delete("https://skalarbooks.herokuapp.com/record/" + id).then((response) => {
+    axios.delete("https://skalarbooks.herokuapp.com/record" + id).then((response) => {
       console.log(response.data);
     });
 
