@@ -71,7 +71,7 @@ export default class CreateBooks extends Component {
     };
  
     axios
-      .post("http://localhost:5000/record/addbooks", newbook)
+      .post("https://skalarbooks.herokuapp.com/record/addbooks", newbook)
       .then((res) => console.log(res.data));
  
     // We will empty the state after posting the data to the database
