@@ -13,12 +13,12 @@ const Navbar = () => {
     <ul>
       <li class="li_skalar">
       <NavLink  to="/">
-           <img width='100%' height="100%" src="https://i.imgur.com/nBsZJyM.png" title="source: imgur.com" />
+           <img width='100%' height="100%" src="https://i.imgur.com/0qqkFI9.png" title="source: imgur.com" />
        </NavLink>
       </li>
       <li class="cart">
         <NavLink  to="../cart">
-           <img width='100%' height="100%" src="https://i.imgur.com/OENTOFn.png" title="source: imgur.com" /> 
+           <img width='100%' height="100%" src="https://i.imgur.com/fJtls8r.png" title="source: imgur.com" /> 
         </NavLink>
       </li>
     </ul>
