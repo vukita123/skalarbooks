@@ -13,7 +13,7 @@ const Footer = () => {
         <Col class="footer_col">
           <a href="https://www.instagram.com/skalar_novi_sad/"> 
               <div class="footer_card">
-                <img src="https://i.imgur.com/lLwZjBy.png"/> 
+                <img src="https://i.imgur.com/NF8hqOa.png"/> 
                 <div class="social_link">Instagram</div>
               </div>
               </a>
@@ -23,21 +23,21 @@ const Footer = () => {
         
               <a href="https://www.facebook.com/skalarnovisad/"> 
               <div class="footer_card">
-              <img src="https://i.imgur.com/5dj385h.png"/> 
+              <img src="https://i.imgur.com/UaKShOz.png"/> 
               <div class="social_link">Facebook</div>
               </div>
             </a>
         </Col>
         <Col class="footer_col">
         <div class="footer_card">
-        <img src="https://i.imgur.com/NQWs6x0.png"/> 
+        <img src="https://i.imgur.com/OPO5QGJ.png"/> 
               <div class="social_link">021/635-0171</div>
               </div>
         </Col>
         <Col class="footer_col"> 
         <a href="https://www.google.com/maps/place/Radni%C4%8Dka+16a,+Novi+Sad/@45.2492113,19.846848,17z/data=!3m1!4b1!4m5!3m4!1s0x475b106d016c4793:0x5c11260aa98620cd!8m2!3d45.2492113!4d19.8490367"> 
         <div class="footer_card">
-              <img src="https://i.imgur.com/AnKhut4.png"/> 
+              <img src="https://i.imgur.com/lHoAGAE.png"/> 
               <div class="social_link">Radnicka 16a, Novi Sad</div>
             </div>
             </a>
