@@ -40,6 +40,7 @@ export default class Cart extends Component {
       name: '',
       email: '',
       subject:'',
+      grad: '',
       message: '',
       phone: '',
       zip: '',
@@ -127,7 +128,7 @@ export default class Cart extends Component {
   onSubmit(e) {
     e.preventDefault();
     
-    var email_body = "Ime poručioca:  " + this.state.name + "\nKnjige: "+ this.state.books +'\nAdresa:  '+ this.state.subject +'\nPostanski broj:  '+ this.state.zip +'\nTelefon:  '+ this.state.phone +'\nCena: ' + this.totalList();
+    var email_body = "Ime poručioca:  " + this.state.name + "\nKnjige: "+ this.state.books +'\nAdresa:  '+ this.state.subject +'\nGrad:  '+ this.state.grad +'\nPostanski broj:  '+ this.state.zip +'\nTelefon:  '+ this.state.phone +'\nCena: ' + this.totalList();
     console.log(email_body);
     // When post request is sent to the create url, axios will add a new record(newperson) to the database.
     const newbook = {
@@ -146,6 +147,7 @@ export default class Cart extends Component {
       name: '',
       email: '',
       subject:'',
+      grad: '',
       message: '',
       phone: '',
       zip: '',
@@ -171,6 +173,10 @@ export default class Cart extends Component {
       this.setState({subject: event.target.value})
   }
 
+  onGradChange(event) {
+    this.setState({grad: event.target.value})
+}
+
   onZipChange(event) {
     this.setState({zip: event.target.value})
   }
@@ -181,6 +187,8 @@ export default class Cart extends Component {
   onAmountChange(event) {
     this.setState({amount: event.target.value})
   }
+
+
 
 
 
@@ -241,6 +249,11 @@ export default class Cart extends Component {
                                                 <input placeholder = "Adresa"  id="subject" type="text"
                                                   className="form-control" required value={this.state.subject}
                                                   onChange={this.onSubjectChange.bind(this)}/>
+                                            </div>
+                                            <div className="input_box">
+                                                <input placeholder = "Grad"  id="subject" type="text"
+                                                  className="form-control" required value={this.state.grad}
+                                                  onChange={this.onGradChange.bind(this)}/>
                                             </div>
                                             <div className="form-group">
                                             
