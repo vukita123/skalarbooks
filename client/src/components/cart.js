@@ -128,7 +128,7 @@ export default class Cart extends Component {
   onSubmit(e) {
     e.preventDefault();
     
-    var email_body = "Ime poručioca:  " + this.state.name + "\nKnjige: "+ this.state.books +'\nAdresa:  '+ this.state.subject +'\nGrad:  '+ this.state.grad +'\nPostanski broj:  '+ this.state.zip +'\nTelefon:  '+ this.state.phone +'\nCena: ' + this.totalList();
+    var email_body = "Ime poručioca:  " + this.state.name + "\nKnjige: "+ this.state.books +'\nAdresa:  '+ this.state.subject +'\nMesto:  '+ this.state.grad +'\nPostanski broj:  '+ this.state.zip +'\nTelefon:  '+ this.state.phone +'\nCena: ' + this.totalList();
     console.log(email_body);
     // When post request is sent to the create url, axios will add a new record(newperson) to the database.
     const newbook = {
@@ -251,7 +251,7 @@ export default class Cart extends Component {
                                                   onChange={this.onSubjectChange.bind(this)}/>
                                             </div>
                                             <div className="input_box">
-                                                <input placeholder = "Grad"  id="subject" type="text"
+                                                <input placeholder = "Mesto"  id="subject" type="text"
                                                   className="form-control" required value={this.state.grad}
                                                   onChange={this.onGradChange.bind(this)}/>
                                             </div>
